@@ -65,7 +65,7 @@ function changeMap() {
         //alert(cat);
     switch (cat) {
         case "all":
-            goal2 = "78993";
+            goal2 = "38797";
             break;
         case "kid":
             goal2 = "78994";
