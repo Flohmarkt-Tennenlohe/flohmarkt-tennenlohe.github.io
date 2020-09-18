@@ -21,37 +21,40 @@
 <body onload="dimCheck()" onresize="dimCheck()">
 
     <div id="global_header">
-        <!--<div id="menubtn" class="container" onclick="toggleNav()">
+        <!--
+        <div id="menubtn" class="container" onclick="toggleNav()">
             <div class="ball1"></div>
             <div class="ball11"></div>
             <div class="ball2"></div>
             <div class="ball3"></div>
             <div class="ball31"></div>
 
-        </div>-->
+        </div>
+        -->
 
         <div class="content">
-            <h1 onclick="changePage('map')">Tennenlohe</h1>
+            <h1 onclick="changePage('map')">Tennenlohe
+            </h1>
+            <h5 style="position:relative;color:red;top: -10px;"><b>Bitte beachten Sie die g&auml;ngigen Hygieneregeln!</b></h5>
             <div class="nav">
                 <div class="menu" onclick="changePage('map')"><span class="glyphicon glyphicon-map-marker"></span></div>
                 <div class="menu" onclick="changePage( 'legal') "><b>&sect;</b></div>
             </div>
+
         </div>
     </div>
 
     <iframe id="frame" width="0" height="0" src="pages/map.html " alt="Your browser obvously doesn 't support functions necessary for this website. :("></iframe>
 
-    <!--
+
     <div id="sidenav" class="sidenav">
         <div id="sideLinks" style="min-width:250px">
-            <div class="link" onclick="changePageSide('main', this, true)">Startseite</div><br>
-    <div class="link" onclick="changePageSide('partner', this, true)">Partner</div><br>
-    
             <div class="link" onclick="changePageSide('map', this, true)">Karte</div><br>
-            <div class="link" onclick="changePageSide('legal', this, true)">Impressum</div><br>
-            <div class="link" onclick="changePageSide('legal2', this, true)">Datenschutz</div><br>
+            <div class="link" onclick="changePageSide('tutorial', this, true)">Anleitung</div><br>
+            <div class="link" onclick="changePageSide('legal', this, true)">Rechtliches</div><br>
+
         </div>
-    </div>-->
+    </div>
 
 </body>
 

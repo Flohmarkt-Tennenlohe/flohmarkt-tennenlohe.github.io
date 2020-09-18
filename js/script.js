@@ -57,12 +57,38 @@ function changePageChild(target, link, marked) { //See above, only for calling f
     parent.changePage(target, link, marked);
 }
 
-/*function openLegend(btn) {
-    btn = document.getElementById("legendBtn");
-    btntxt = document.getElementById("legendBtnTxt");
-    var act = btntxt.innerHTML;
-    btntxt.innerHTML = "&times;";
-    btn.style.height = "150px";
-    btn.style.width = "150px";
+function changeMap() {
+    var cat = document.getElementById("category").value;
+    var frame = document.getElementById("mapframe");
+    var goal1 = "https://maphub.net/embed/"
+    var goal3 = "?directions=1&geolocation=1"
+        //alert(cat);
+    switch (cat) {
+        case "all":
+            goal2 = "78993";
+            break;
+        case "kid":
+            goal2 = "78994";
+            break;
+        case "house":
+            goal2 = "78995";
+            break;
+        case "selfm":
+            goal2 = "78998";
+            break;
+        case "electric":
+            goal2 = "78996";
+            break;
+        case "cloth":
+            goal2 = "78997";
+            break;
+        default:
+            goal2 = "78993";
+            break;
+    }
 
-}*/
+    frame.src = goal1 + goal2 + goal3;
+    //alert("done, " + frame.src);
+
+
+}

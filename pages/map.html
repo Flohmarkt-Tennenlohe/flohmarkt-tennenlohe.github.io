@@ -10,33 +10,51 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/pages.css">
     <!--<script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="../js/script.js"></script>-->
+    <script type="text/javascript" src="../js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="../js/script.js"></script>
 
 
     <title>Startseite</title>
 </head>
 
 <body style="overflow:hidden;">
-    <div class="pagecontent">
-        <iframe width="100%" height="85%" src="https://maphub.net/embed/38797?directions=1&geolocation=1" frameborder="0" allow="geolocation"></iframe>
+    <div class="pagecontent" style="padding:0px">
+        <div id="selector" style="position: absolute; top:0px;left:110px">
+            <select id="category" class="form-control" style="width:260px">
+            <option value="all">Alle Stände</option>
+            <option value="kid">Stände mit Kindersachen</option>
+            <option value="house">Stände mit Haushaltsgegenständen</option>
+            <option value="selfm">Stände mit Selbstgemachtem</option>
+            <option value="electric">Stände mit Elektrogeräten</option>
+            <option value="cloth">Stände mit Kleidung</option>
+            </select>
+
+            <button type="button" class="btn" style="background-color:#e1e1e1;margin-top:5px" onclick="changeMap()">Anzeigen</button>
+        </div>
+
+        <iframe id="mapframe" width="100%" height="85%" src="https://maphub.net/embed/78993?directions=1&geolocation=1" frameborder="0" allow="geolocation"></iframe>
+        <!-- alter Code 38797-->
 
         <div id="legend">
+            <!--
             <div class="img-circle legendCol" style="background-color:#3CC954">
                 <p class="legendTxt">Sponsoren</p>
             </div><br>
+            -->
             <div class="img-circle legendCol" style="background-color:#FB6033">
                 <p class="legendTxt">Aktionen</p>
             </div><br>
             <div class="img-circle legendCol" style="background-color:#1B8893">
-                <p class="legendTxt">Teilnehmer</p>
+                <p class="legendTxt">Stände</p>
             </div><br>
+            <!--
             <div class="img-circle legendCol" style="background-color:#B63681">
                 <p class="legendTxt">Toiletten</p>
             </div><br>
+            
             <div class="img-circle legendCol" style="background-color:#2A4EA1">
                 <p class="legendTxt">Parken</p>
-            </div><br>
+            </div><br>-->
         </div>
 
 
