@@ -19,6 +19,13 @@
 </head>
 
 <body onload="dimCheck()" onresize="dimCheck()">
+    
+    <script>
+        function downloadConfirm(){
+            if(confirm("Weiterleitung zum Google Play Store? (nur f&uuml;r Android-Nutzer)"))
+                window.location.href = "https://play.google.com/store/apps/details?id=jr.testApp.dev";
+        }
+    </script>
 
     <div id="global_header">
         <!--
@@ -33,10 +40,11 @@
         -->
 
         <div class="content">
-            <h1 onclick="changePage('map')">Tennenlohe </h1>
+            <img src="img/icons/icon96.png" alt="Logo">
+            <!--<h1 onclick="changePage('map')">Tennenlohe </h1>-->
             <!-- style="position:relative;color:red;top: -10px;"><b>Bitte beachten Sie die g&auml;ngigen Hygieneregeln!</b></h5>-->
             <div class="nav">
-                <div class="menu"> <a href="https://play.google.com/store/apps/details?id=jr.testApp.dev"><span class="glyphicon glyphicon-download-alt"></span></a></div>
+                <div class="menu"><span class="glyphicon glyphicon-download-alt"></span></div>
                 <div class="menu" onclick="changePage('map')"><span class="glyphicon glyphicon-map-marker"></span></div>
                 <div class="menu" onclick="changePage( 'legal') "><span class="glyphicon glyphicon-question-sign"></div>
             </div>
@@ -44,7 +52,7 @@
         </div>
     </div>
 
-    <iframe id="frame" width="0" height="0" src="pages/map.html " alt="Your browser obvously doesn 't support functions necessary for this website. :("></iframe>
+    <iframe id="frame" width="0" height="0" src="pages/map.html " alt="Your browser obvously does not support functions necessary for this website. :("></iframe>
 
 
     <div id="sidenav" class="sidenav">
