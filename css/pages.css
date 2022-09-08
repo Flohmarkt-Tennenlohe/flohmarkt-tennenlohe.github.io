@@ -162,6 +162,10 @@ a {
     margin-left: 20px;
 }
 
+.menu a {
+    color: var(--colorH) !important;
+}
+
 
 /* The side navigation menu */
 
